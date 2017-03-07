@@ -1,0 +1,21 @@
+version: 4.2
+os: linux
+files:
+  - source: \weblogic-demo\*
+    destination: c:\tmp\weblogic-demo\
+hooks:
+  ApplicationStop:
+    - location: deployment_hooks\application_stop.bat
+      timeout: 300
+  BeforeInstall:
+    - location: deployment_hooks\before_install.bat
+      timeout: 300
+  AfterInstall:
+    - location: deployment_hooks\after_install.bat
+      timeout: 300
+  ApplicationStart:
+    - location: deployment_hooks\application_start.bat
+      timeout: 300
+  ValidateService:
+    - location: deployment_hooks\validate_service.bat
+      timeout: 300
