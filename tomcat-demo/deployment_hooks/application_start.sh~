@@ -1,7 +1,0 @@
-#!/bin/bash
-echo "application_start.sh"
-/work/upgrade/restart_jboss.sh estore7081 7081 estore
-
-bash /opt/apache-tomcat-7.0.69/bin/startup.sh
-
-ps aux | grep tomcat
