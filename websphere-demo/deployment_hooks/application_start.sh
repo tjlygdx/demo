@@ -9,6 +9,6 @@ processesNum=`bash $WAS_PATH/wsadmin.sh -port 8880 -user $user -password $psword
 if [ "$processesNum" -gt "0" ];then
     exit 0
 else 
-	bash $WAS_PATH/wsadmin.sh -port 8880 -user $user -password $psword -lang jython -f /opt/websphere-demo-song/scripts/start.py
+	bash $WAS_PATH/wsadmin.sh -port 8880 -user $user -password $psword -lang jython -f /opt/websphere-demo-song/deployment_hooks/start.py
 fi
 
