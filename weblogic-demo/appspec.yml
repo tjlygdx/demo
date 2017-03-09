@@ -1,5 +1,5 @@
 version: 4.2
-os: linux
+os: windows
 files:
   - source: \weblogic-demo\*
     destination: c:\tmp\weblogic-demo\
